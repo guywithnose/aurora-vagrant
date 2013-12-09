@@ -1,0 +1,25 @@
+<VirtualHost *:80>
+    ServerName aurora
+    DocumentRoot "/vagrant/aurora/mobile/public"
+    SetEnv TOL_SITE mobile
+    SetEnv TOL_REALM ctol
+    SetEnv TOL_CMS_PATH /vagrant/cms/
+    SetEnv TOL_COMPILE false
+    <Directory "/vagrant/aurora/mobile/public">
+            RewriteEngine on
+            Options FollowSymLinks MultiViews
+            AllowOverride All
+            Order allow,deny
+            Allow from all
+            Require all granted
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteRule .* index.php [L]
+    </Directory>
+        Alias /research /www/files/research
+        <Directory "/www/files/research">
+                AllowOverride All
+                Order allow,deny
+                Allow from all
+                Require all granted
+        </Directory>
+</VirtualHost>

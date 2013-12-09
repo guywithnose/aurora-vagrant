@@ -1,0 +1,2 @@
+ServerName localhost
+SetEnv TOL_ENVIRONMENT development
