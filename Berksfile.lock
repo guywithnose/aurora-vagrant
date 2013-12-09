@@ -1,0 +1,48 @@
+{
+  "sources": {
+    "php-fpm": {
+      "locked_version": "0.5.1",
+      "git": "git://github.com/nubs/cookbook-php-fpm.git",
+      "ref": "471b9c366cf3c6da4b246e7ae1a40c6c5ae27103"
+    },
+    "aurora": {
+      "path": "."
+    },
+    "apt": {
+      "locked_version": "2.3.0"
+    },
+    "yum": {
+      "locked_version": "2.4.4"
+    },
+    "nginx": {
+      "locked_version": "2.0.8"
+    },
+    "bluepill": {
+      "locked_version": "2.3.0"
+    },
+    "rsyslog": {
+      "locked_version": "1.9.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    },
+    "runit": {
+      "locked_version": "1.4.6"
+    },
+    "php": {
+      "locked_version": "1.2.6"
+    },
+    "xml": {
+      "locked_version": "1.2.0"
+    },
+    "mysql": {
+      "locked_version": "4.0.10"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    }
+  }
+}
