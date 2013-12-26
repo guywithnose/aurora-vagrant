@@ -3,6 +3,7 @@ Vagrant.configure("2") do |config|
   config.berkshelf.enabled = true
 
   config.vm.box = "saucy64"
+  config.vm.box_url = "https://www.dropbox.com/s/p5hcj1xyr11fpne/saucy64.box"
   config.vm.network "forwarded_port", guest: 80, host: 8085
 
   config.vm.provider :virtualbox do |vb|
